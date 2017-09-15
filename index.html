@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></meta>
+<title>海昌地产</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/myfocus-1.2.4.full.js"></script><!--首先引入myFocus库-->
+<script type="text/javascript" src="js/pattern/mF_YSlider.js"></script><!--引入风格应用js-->
+<link rel="stylesheet" href="js/pattern/mF_YSlider.css" /><!--引入风格应用css-->
+<script type="text/javascript" src="js/xiala.js"></script><!--引入风格应用js-->
+<script>
+//初始化
+var def="1";
+function mover(object){
+  //主菜单
+  var mm=document.getElementById("m_"+object);
+  mm.className="m_li_a";
+  //初始主菜单先隐藏效果
+  if(def!=0){
+    var mdef=document.getElementById("m_"+def);
+    mdef.className="m_li";
+  }
+  //子菜单
+  var ss=document.getElementById("s_"+object);
+  ss.style.display="block";
+  //初始子菜单先隐藏效果
+  if(def!=0){
+    var sdef=document.getElementById("s_"+def);
+    sdef.style.display="none";
+  }
+}
+
+function mout(object){
+  //主菜单
+  var mm=document.getElementById("m_"+object);
+  mm.className="m_li";
+  //初始主菜单还原效果
+  if(def!=0){
+    var mdef=document.getElementById("m_"+def);
+    mdef.className="m_li_a";
+  }
+  //子菜单
+  var ss=document.getElementById("s_"+object);
+  ss.style.display="none";
+  //初始子菜单还原效果
+  if(def!=0){
+    var sdef=document.getElementById("s_"+def);
+    sdef.style.display="block";
+  }
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="head">
+	<div id="head_right">
+	 <a href="#">加入收藏</a><a href="#">设为首页</a><a href="#">联系我们</a>
+	</div><!--header 右 结束-->
+  </div><!--head 结束-->
+<!--菜单开始-->
+<div id="navbj">
+  <div id="nav">
+   
+  <div id="menu">
+  <ul>
+    <li id="m_1" class='m_li_a' style="width:0px;padding:0px;"></li>
+    <li id="m_2" class='m_li' onmouseover='mover(2);' onmouseout='mout(2);'><a href="index.html">首 页</a></li>
+    <li class="m_line"><img src="images/m_04.jpg" /></li>
+    <li id="m_3" class='m_li' onmouseover='mover(3);' onmouseout='mout(3);'><a href="moban.html">关于房产</a></li>
+    <li class="m_line"><img src="images/m_04.jpg" /></li>
+    <li id="m_4" class='m_li' onmouseover='mover(4);' onmouseout='mout(4);'><a href="ny1.html">集团新闻</a></li>
+    <li class="m_line"><img src="images/m_04.jpg" /></li>
+    <li id="m_5" class='m_li' onmouseover='mover(5);' onmouseout='mout(5);'><a href="ny2.html">项目中心</a></li>
+    <li class="m_line"><img src="images/m_04.jpg" /></li>
+    <li id="m_6" class='m_li' onmouseover='mover(6);' onmouseout='mout(6);'><a href="ny3.html">领导关怀</a></li>
+	<li class="m_line"><img src="images/m_04.jpg" /></li>
+    <li id="m_7" class='m_li' onmouseover='mover(7);' onmouseout='mout(7);'><a href="ny4.html">资质荣誉</a></li>
+	<li class="m_line"><img src="images/m_04.jpg" /></li>
+    <li id="m_8" class='m_li' onmouseover='mover(8);' onmouseout='mout(8);'><a href="ny2.html">服务中心</a></li>
+  </ul>
+</div>
+<div style="height:26px;">
+   <ul class="smenu">
+     <li style="padding-left:29px;" id="s_1" class='s_li_a'>
+	   <div id="tit_gun">
+	      <div id="tit_gun_tit">
+	      	         <!--标题公告开始-->
+            <div id="div1">
+             <a href="#">热烈庆祝南阳房地产官网正式上线！</a>
+			 <a href="#">热烈庆祝南阳房地产官网正式上线！</a>
+			 <a href="#">热烈庆祝南阳房地产官网正式上线！</a>
+            </div> 
+<div>
+<script>
+var c,_=Function;
+with(o=document.getElementById("div1")){ innerHTML+=innerHTML; onmouseover=_("c=1"); onmouseout=_("c=0");}
+(F=_("if(#%18||!c)#++,#%=o.scrollHeight>>1;setTimeout(F,#%18?10:5000);".replace(/#/g,"o.scrollTop")))();
+</script>
+	 </div>  
+<!--标题公告结束-->
+         </div>
+	   </div>
+	 </li>
+     
+   </ul>
+</div>
+ </div>
+ <div id="nav_right">
+<div class="top_r_22" id="clock" >
+<SCRIPT language=javascript>  
+<!--  
+function show() {  
+  var d = new Date();  
+  var iYear = d.getFullYear()  
+  var iMonth = d.getMonth()  
+  var iDay = d.getDate()  
+  var sWeek = d.getDay()  
+  var sHour = d.getHours()  
+  var sMinute = d.getMinutes()  
+  var sSecond = d.getSeconds()  
+  if(sWeek == 0) sWeek = " <font color=#ffffff>星期天 </font>";  
+  if(sWeek == 1) sWeek = "星期一";  
+  if(sWeek == 2) sWeek = "星期二";  
+  if(sWeek == 3) sWeek = "星期三";  
+  if(sWeek == 4) sWeek = "星期四";  
+  if(sWeek == 5) sWeek = "星期五";  
+  if(sWeek == 6) sWeek = " <font color=#ffffff>星期六 </font>";  
+  if(sHour <= 9) sHour = "0" + sHour;  
+  if(sMinute <= 9) sMinute = "0" + sMinute;  
+  if(sSecond <= 9) sSecond = "0" + sSecond;  
+  sClock = "&nbsp;&nbsp;" + iYear + "年" + (iMonth + 1) + "月" + iDay + "日 " + sWeek  
+  + " " + sHour + ":" + sMinute + ":" + sSecond;  
+  document.getElementById("clock").innerHTML=sClock;
+  setTimeout("show()", 1000);  
+}  
+show();  
+//-->  
+</SCRIPT>
+</div>
+ </div>
+</div>
+<!--navbj 结束-->
+<div id="datu_bj">
+<div id="datu">
+  <!--大图切换开始-->
+    <div id="boxID" class="mF_YSlider"><!--焦点图盒子-->
+     <ul class="pic"><!--内容列表-->
+        <li><img src="images/datu1.jpg"/></li>
+        <li><img src="images/datu2.jpg"/></li>
+		<li><img src="images/datu3.jpg"/></li>
+     </ul>
+   </div>
+<script type="text/javascript">
+myFocus.set({
+    id:'boxID',//焦点图盒子ID
+    pattern:'mF_YSlider',//风格应用的名称
+    time:3,//切换时间间隔(秒)，省略设置即不自动切换
+    trigger:'mouseover',//触发切换模式:'click'(点击)/'mouseover'(悬停)，默认'click'
+    width:746,//设置宽度(主图区)
+    height:261,//设置高度(主图区)
+    txtHeight:'0'//文字层高度设置,'default'为默认高度，0为隐藏，默认'default'
+});
+</script>
+  <!--大图切换结束-->
+</div>
+<div id="redian">
+  <ul>
+    <li><img src="images/f_22.jpg" /><p><a href="#">南阳房产</a></p><h4>时间：2012-12-10</h4></li>
+	<li><img src="images/f_22.jpg" /><p><a href="#">南阳房产</a></p><h4>时间：2012-12-10</h4></li>
+	<li><img src="images/f_22.jpg" /><p><a href="#">南阳房产</a></p><h4>时间：2012-12-10</h4></li>
+	<li><img src="images/f_22.jpg" /><p><a href="#">南阳房产</a></p><h4>时间：2012-12-10</h4></li>
+  </ul>
+</div>
+</div>
+<div style="clear:both;font-size:0px;width:100%"></div>
+<div id="main">
+ <div id="news">
+  <div class="tit"><a href="#">+ MORE</a><img src="images/h_16.jpg" /></div>
+  <div class="news_t">楼盘信息</div>
+  <ul id="news_yi">
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+  </ul>
+  <div class="news_t">集团新闻</div>
+  <ul id="news_er">
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+   <li><a href="#">南阳市首家拥有别墅楼盘的</a><span>2012-12-12</span></li>
+  </ul>
+ </div>
+  <div id="center">
+ <div class="tit" style="width:435px;"><a href="#">+ MORE</a><img src="images/h_18.jpg" /></div>
+ <div id="center_nr"><img src="images/h_30.jpg" />   我们南阳房产项目21万方的整体规划；我们项目的开发商是实力雄厚的南阳海昌房地产开发有限责任公司，成立于2002年4月，公司位于南阳市高新路，主要从事房地产开发与经营，具有国家二级房地产开发企业资质。<br/>
+   　　十年间公司成功开发了花园、上城水岸、蓝调街区、南阳中原商贸城、南阳祥和乐园经适房项目、邓州古城商业中心、幸福家园……
+ </div>
+  <div id="gundong">
+    <div class="tit" style="width:435px;"><a href="#">+ MORE</a><img src="images/h_42.jpg" /></div>
+	<div id="demo">
+<div id="indemo">
+<div id="demo1">
+<ul>
+<li><span><a href="#"><img src="images/h_45.jpg" width="132" height="102" alt=""></a></span><p><a href="#">产品展示</a></p></li>
+<li><span><a href="#"><img src="images/h_45.jpg" width="132" height="102" alt=""></a></span><p><a href="#">产品展示</a></p></li>
+<li><span><a href="#"><img src="images/h_45.jpg" width="132" height="102" alt=""></a></span><p><a href="#">产品展示</a></p></li>
+<li><span><a href="#"><img src="images/h_45.jpg" width="132" height="102" alt=""></a></span><p><a href="#">产品展示</a></p></li>
+<li><span><a href="#"><img src="images/h_45.jpg" width="132" height="102" alt=""></a></span><p><a href="#">产品展示</a></p></li>
+<li><span><a href="#"><img src="images/h_45.jpg" width="132" height="102" alt=""></a></span><p><a href="#">产品展示</a></p></li>
+<li><span><a href="#"><img src="images/h_45.jpg" width="132" height="102" alt=""></a></span><p><a href="#">产品展示</a></p></li>
+</ul>
+</div>
+<div id="demo2"></div>
+</div>
+</div>
+<script>
+<!--
+var speed=30;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+-->
+</script>
+  </div><!--gundong over-->
+ </div>
+ <div id="right">
+ <div class="tit" style="width:222px;"><img src="images/h_20.jpg" /></div>
+ <div id="video">
+ </div>
+ <p><a href="#"><img src="images/h_40.jpg" /></a></p>
+ <p><a href="#"><img src="images/h_48.jpg" /></a></p>
+ <p><a href="#"><img src="images/h_50.jpg" /></a></p>
+ </div>
+</div>
+<div style="clear:both"></div>
+  <div id="footer">
+<span>Copyright©Heng Sheng Da. All Rights Reserved</span> 河南·南阳地产 版权所有：计算机应用专业。</div>
+</div>
+</body>
+</html>
